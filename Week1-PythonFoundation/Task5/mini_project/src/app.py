@@ -251,56 +251,81 @@ elif menu == "View Students":
 
     st.markdown('</div>', unsafe_allow_html=True)
 
-# ================= CSV IMPORT =================
+# ================= CSV IMPORT (FINAL FIX) =================
 elif menu == "Import CSV":
     st.markdown('<div class="card">', unsafe_allow_html=True)
     st.subheader("📂 Import Students from CSV")
 
     st.markdown("""
-    <p>Upload a CSV file with the following columns:</p>
-    <code>id, name, age, department</code>
+    <p>Supported CSV headers:</p>
+    <code>student_id / id, full_name / name, age, department</code>
     """, unsafe_allow_html=True)
 
     uploaded_file = st.file_uploader("Upload CSV File", type=["csv"])
 
     if uploaded_file:
         try:
-            string_data = uploaded_file.getvalue().decode("utf-8")
-            csv_file = StringIO(string_data)
-            reader = csv.DictReader(csv_file)
+            content = uploaded_file.getvalue().decode("utf-8")
+            reader = csv.DictReader(StringIO(content))
 
-            csv_students = list(reader)
+            # normalize headers
+            reader.fieldnames = [h.strip().lower() for h in reader.fieldnames]
+            rows = list(reader)
 
-            if not csv_students:
+            if not rows:
                 st.warning("CSV file is empty")
                 st.stop()
 
             st.success("CSV file loaded successfully ✅")
-
-            # Preview Table
             st.markdown("### 📋 CSV Preview")
-            st.table(csv_students)
+            st.table(rows)
 
             if st.button("➕ Add All Students to System"):
                 added = 0
                 skipped = 0
 
-                for s in csv_students:
+                existing_ids = {s["id"] for s in get_all_students()}
+
+                for r in rows:
                     try:
-                        student = Student(
-                            s["id"].strip(),
-                            s["name"].strip(),
-                            int(s["age"]),
-                            s["department"].strip()
-                        )
+                        # 🔥 HEADER MAPPING
+                        sid = (
+                            r.get("student_id")
+                            or r.get("id")
+                            or ""
+                        ).strip()
+
+                        name = (
+                            r.get("full_name")
+                            or r.get("name")
+                            or ""
+                        ).strip()
+
+                        dept = r.get("department", "").strip()
+                        age_raw = str(r.get("age", "")).strip()
+
+                        if not sid or not name or not dept:
+                            skipped += 1
+                            continue
+
+                        if sid in existing_ids:
+                            skipped += 1
+                            continue
+
+                        age = int(float(age_raw))
+
+                        student = Student(sid, name, age, dept)
                         add_student(student.to_dict())
+
                         added += 1
+                        existing_ids.add(sid)
+
                     except Exception:
                         skipped += 1
 
                 st.success(f"✅ Added: {added} students")
                 if skipped:
-                    st.warning(f"⚠️ Skipped: {skipped} (duplicates or invalid data)")
+                    st.warning(f"⚠️ Skipped: {skipped} (duplicates or invalid rows)")
 
         except Exception as e:
             st.error(f"Invalid CSV file: {e}")
