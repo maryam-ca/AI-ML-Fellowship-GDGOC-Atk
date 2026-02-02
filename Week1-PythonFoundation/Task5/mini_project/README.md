@@ -105,45 +105,66 @@ Once the command runs successfully, the application will open in your browser.
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-Below are placeholders for screenshots.  
-You can add images by placing them in the project folder and updating the paths.
-
-### 🖼️ Application Home Page
-![Home Page Screenshot](screenshots/home_page.png)
+Below are the screenshots of the **Student Management System (Streamlit Mini App)**,
+showing all major features of the application.
 
 ---
 
-### 🖼️ Add Student Feature
-![Add Student Screenshot](screenshots/add_student.png)
+## 🖼️ Application Home Page
+
+This screen shows the main dashboard of the application when it is first launched.
+
+![Home Page](screenshots/home.png)
 
 ---
 
-### 🖼️ View Students List
-![View Students Screenshot](screenshots/view_students.png)
+## ➕ Add Student Feature
+
+This screen allows the user to add a new student by entering the required details.
+
+![Add Student](screenshots/add_student.png)
 
 ---
 
-### 🖼️ Delete Student Feature
-![Delete Student Screenshot](screenshots/delete_student.png)
+## 🔍 Search Student Feature
+
+This screen allows the user to search for a student using their ID or name.
+
+![Search Student](screenshots/search_student.png)
 
 ---
 
-> 📌 **Note:**  
-> Create a folder named `screenshots` inside `mini_project` and place your images there.
+## ✏️ Update Student Feature
 
-Example:
-mini_project/
-├── screenshots/
-│ ├── home_page.png
-│ ├── add_student.png
-│ ├── view_students.png
-│ └── delete_student.png
+This screen allows the user to update the information of an existing student.
 
+![Update Student](screenshots/update_student.png)
 
 ---
 
+## 📥 Import Students (CSV)
+
+This screen shows the functionality to import multiple student records using a CSV file.
+
+![Import CSV](screenshots/import_csv.png)
+
+---
+
+## 📋 View Students List
+
+This screen displays all stored student records in a structured table format.
+
+![View Students](screenshots/view_students.png)
+
+---
+
+## ❌ Delete Student Feature
+
+This screen allows the user to delete a student record using the student ID.
+
+![Delete Student](screenshots/delete_student.png)
 ## 🧠 Learning Outcomes
 
 After completing this project, the following learning outcomes were achieved:
