@@ -1,7 +1,9 @@
 import json
 import os
 
-DATA_FILE = "data/students.json"
+# 🔥 ABSOLUTE SAFE PATH
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_FILE = os.path.join(BASE_DIR, "..", "data", "students.json")
 
 
 def load_students():
@@ -9,24 +11,22 @@ def load_students():
         return []
 
     try:
-        with open(DATA_FILE, "r") as file:
+        with open(DATA_FILE, "r", encoding="utf-8") as file:
             return json.load(file)
-    except json.JSONDecodeError:
+    except (json.JSONDecodeError, FileNotFoundError):
         return []
 
 
 def save_students(students):
-    with open(DATA_FILE, "w") as file:
+    with open(DATA_FILE, "w", encoding="utf-8") as file:
         json.dump(students, file, indent=4)
 
 
 def add_student(student):
     students = load_students()
 
-    # Check duplicate ID
-    for s in students:
-        if s["id"] == student["id"]:
-            raise ValueError("Student ID already exists")
+    if any(s["id"] == student["id"] for s in students):
+        raise ValueError("Student ID already exists")
 
     students.append(student)
     save_students(students)
@@ -34,38 +34,39 @@ def add_student(student):
 
 def delete_student(student_id):
     students = load_students()
-    updated_students = [s for s in students if s["id"] != student_id]
+    updated = [s for s in students if s["id"] != student_id]
 
-    if len(students) == len(updated_students):
+    if len(updated) == len(students):
         raise ValueError("Student not found")
 
-    save_students(updated_students)
+    save_students(updated)
 
 
 def get_all_students():
     return load_students()
 
+
 def update_student(student_id, updated_data):
     students = load_students()
-    found = False
 
     for s in students:
         if s["id"] == student_id:
-            s.update(updated_data)
-            found = True
-            break
+            s["name"] = updated_data.get("name", s["name"])
+            s["age"] = updated_data.get("age", s["age"])
+            s["department"] = updated_data.get("department", s["department"])
+            save_students(students)
+            return
 
-    if not found:
-        raise ValueError("Student not found")
-
-    save_students(students)
+    raise ValueError("Student not found")
 
 
 def search_students(query):
     students = load_students()
-    query = query.lower()
+    query = query.lower().strip()
 
     return [
         s for s in students
-        if query in s["id"].lower() or query in s["name"].lower()
+        if query in s["id"].lower()
+        or query in s["name"].lower()
+        or query in s["department"].lower()
     ]
