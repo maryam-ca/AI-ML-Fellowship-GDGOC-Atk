@@ -1,170 +1,164 @@
-# Exploratory Data Analysis (EDA) – Data Cleaning & Visualization
+# 🚀 AI–ML Fellowship Program
+
+## Complete Learning Journey: Foundations to Applied Projects
 
 ---
 
-## 📌 Overview
+## Fellowship Overview
 
-This project focuses on **Exploratory Data Analysis (EDA)**, which is a critical step in the data science and machine learning workflow.  
-The main purpose of EDA is to understand the dataset, identify patterns, handle missing values, and prepare clean data for further analysis or model building.
+This repository documents my complete learning journey in the **AI–ML Fellowship Program**.  
+The fellowship is designed to build strong foundations in **Python, Data Science, Machine Learning, and Applied AI projects** through a structured, task-based, and hands-on approach.
 
-In this notebook, the dataset is carefully explored using **Python**, **Pandas**, **NumPy**, and visualization libraries.  
-All steps are performed in a structured and well-documented manner using **Markdown headings** to ensure clarity and readability.
-
-This work is suitable for **academic submission** and follows standard notebook requirements.
+Each week focuses on specific learning goals, practical assignments, and real-world problem solving.  
+All work is organized week-wise and task-wise for clarity, evaluation, and future reference.
 
 ---
 
-## 🎯 Project Objectives
+## Fellowship Objectives
 
-The main objectives of this EDA project are:
+The main objectives of this fellowship are:
 
-- To load and inspect the dataset properly
-- To understand the structure and types of data
-- To identify missing and inconsistent values
-- To perform data cleaning and preprocessing
-- To visualize important patterns and trends
-- To write clean, readable, and well-documented code
-
----
-
-## 🛠️ Tools & Libraries Used
-
-The following tools and libraries are used in this project:
-
-- **Python**
-- **Google Colab / Jupyter Notebook**
-- **NumPy** – for numerical operations
-- **Pandas** – for data loading, cleaning, and manipulation
-- **Matplotlib** – for basic data visualizations
-- **Seaborn** – for advanced and statistical visualizations
+- Build strong programming foundations using Python  
+- Understand data handling, cleaning, and visualization  
+- Develop analytical thinking through Exploratory Data Analysis (EDA)  
+- Apply machine learning concepts on real-world datasets  
+- Improve project structuring, documentation, and GitHub usage  
+- Prepare for advanced AI and ML projects  
 
 ---
 
-## 📊 Dataset Overview
+## Repository Structure
 
-The dataset used in this project is a **structured tabular dataset** obtained from **Kaggle**.
+The repository is organized in a clean and structured manner as follows:
 
-### Dataset Characteristics
-- Contains multiple rows and columns
-- Includes numerical and categorical features
-- May contain missing or null values
-- Suitable for data analysis and visualization tasks
+AI-ML-FELLOWSHIP-GDOC-ATK/
+│
+├── Week1-PythonFoundation/
+│ ├── Task1
+│ ├── Task2
+│ ├── Task3
+│ ├── Task4
+│ ├── Task5
+│ └── README.md
+│
+├── Week2-Data Handling & Visualization/
+│ ├── Task1
+│ ├── Task2
+│ ├── Task3
+│ ├── Task4
+│ ├── Task5
+│ ├── Task6
+│ └── README.md
+│
+├── Week3-PeerProject1/
+│ └── (Peer Project Work)
+│
+└── README.md
 
-The dataset is loaded locally using Pandas and explored step by step to understand its structure and quality.
 
----
-
-## ▶️ How to Run the Notebook
-
-Follow these steps to run the notebook successfully:
-
-1. Download or clone this repository from GitHub.
-2. Open the `.ipynb` file using:
-   - Google Colab (recommended), or
-   - Jupyter Notebook
-3. Upload the dataset file if required.
-4. Run all cells **from top to bottom**.
-5. Review the outputs, tables, and visualizations generated in each step.
-
-📌 **Note:** Ensure all required libraries are installed before running the notebook.
-
----
-
-## 🔍 Data Loading & Initial Inspection
-
-The dataset is loaded using **Pandas**.
-
-### Tasks Performed:
-- Loaded the dataset using `pd.read_csv()`
-- Viewed the first few rows using `.head()`
-- Checked dataset shape using `.shape`
-- Inspected data types using `.info()`
-- Generated statistical summary using `.describe()`
-
-These steps help in understanding the overall structure and quality of the data.
+Each week contains its own tasks and a dedicated README explaining the weekly work in detail.
 
 ---
 
-## 🧹 Data Cleaning & Preprocessing
+## Week 1: Python Foundation
 
-Data cleaning and preprocessing is a crucial step before analysis.
+### Focus Areas
 
-### Cleaning Steps Performed:
-- Checked for missing values
-- Handled missing data appropriately
-- Removed or corrected inconsistent values
-- Checked for duplicate records
-- Converted data types where necessary
-- Prepared features for analysis
+Week 1 focuses on building a strong foundation in **Python programming**.
 
-Each preprocessing step is clearly explained using **Markdown headings** in the notebook.
+Key learning areas include:
+- Python basics and syntax  
+- Variables and data types  
+- Conditional statements  
+- Loops  
+- Functions  
+- Basic problem-solving  
 
----
-
-## 📈 Data Visualization
-
-Meaningful and informative visualizations are created to explore the dataset.
-
-### Visualizations Included:
-- Bar charts
-- Histograms
-- Count plots
-- Distribution plots
-
-### Purpose of Visualizations:
-- To understand data distribution
-- To identify trends and patterns
-- To compare different categories
-- To detect outliers and anomalies
-
-All visualizations include proper titles, labels, and readable axes.
+The tasks in this week helped develop logical thinking and programming confidence.
 
 ---
 
-## 🧾 Code Quality & Readability
+## Week 2: Data Handling & Visualization
 
-Special attention is given to code quality and readability.
+### Focus Areas
 
-### Standards Followed:
-- Clean and well-structured code
-- Proper indentation and spacing
-- Meaningful variable names
-- Logical flow of operations
-- Extensive use of Markdown for explanations
+Week 2 is focused on **data analysis and visualization**, which is a core skill in data science and machine learning.
 
-The notebook is easy to understand for beginners as well as instructors.
+Key learning areas include:
+- Understanding datasets and data types  
+- Using NumPy for numerical operations  
+- Using Pandas for data processing  
+- Data cleaning and preparation  
+- Data visualization using Matplotlib and Seaborn  
+- Exploratory Data Analysis (EDA)  
 
----
+### Major Task
 
-## 🧠 Learning Outcomes
-
-Through this project, the following skills were developed:
-
-- Understanding how to explore and inspect datasets
-- Performing data cleaning and preprocessing
-- Creating meaningful visualizations
-- Writing clean and readable data analysis code
-- Understanding the importance of EDA before machine learning
+- **Task 6: Exploratory Data Analysis (EDA) on Titanic Dataset**
+  - Data loading and inspection  
+  - Data cleaning and preprocessing  
+  - Visualization of trends and patterns  
+  - Key insights and observations  
 
 ---
 
-## ✅ Conclusion
+## Week 3: Peer Project
 
-This Exploratory Data Analysis project successfully demonstrates how raw data can be transformed into useful insights.
+### Focus Areas
 
-All required steps including:
-- Data loading
-- Data inspection
-- Data cleaning and preprocessing
-- Data visualization
-- Clear documentation
+Week 3 involves a **peer-based project**, where collaboration, planning, and real-world problem solving are emphasized.
 
-have been completed in a professional and structured manner.
-
-This notebook is **ready for academic submission** and meets all given requirements.
+Key goals include:
+- Team collaboration  
+- Problem formulation  
+- Dataset understanding  
+- Applying concepts learned in previous weeks  
+- Presenting and documenting results professionally  
 
 ---
 
-📂 **Project Type:** Exploratory Data Analysis  
-🧪 **Focus Area:** Data Cleaning & Visualization  
-📘 **Status:** Submission Ready ✅
+## Tools and Technologies Used
+
+Throughout the fellowship, the following tools and technologies are used:
+
+- Python  
+- NumPy  
+- Pandas  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook  
+- Google Colab  
+- GitHub  
+
+---
+
+## Learning Outcomes
+
+By completing this fellowship, the following outcomes are achieved:
+
+- Strong understanding of Python programming  
+- Ability to clean and analyze real-world datasets  
+- Skill to visualize data and extract insights  
+- Experience with structured project development  
+- Confidence in using GitHub for project management  
+- Readiness for advanced AI and Machine Learning topics  
+
+---
+
+## Documentation and Best Practices
+
+- Each task is properly organized in folders  
+- Code is clean, readable, and well-commented  
+- Markdown is used for explanations and headings  
+- README files are provided for weekly documentation  
+- Insights and observations are clearly written  
+
+---
+
+## Conclusion
+
+The AI–ML Fellowship Program provides a complete and structured pathway from **basic programming** to **applied data science and AI projects**.  
+This repository serves as a comprehensive record of learning, practice, and growth throughout the fellowship.
+
+---
+
