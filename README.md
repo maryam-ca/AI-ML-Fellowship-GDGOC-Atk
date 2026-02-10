@@ -6,7 +6,7 @@
 
 ## Fellowship Overview
 
-This repository documents my complete learning journey in the **AI–ML Fellowship Program**.  
+This repository documents my complete learning journey in **AI–ML Fellowship Program**.  
 The fellowship is designed to build strong foundations in **Python, Data Science, Machine Learning, and Applied AI projects** through a structured, task-based, and hands-on approach.
 
 Each week focuses on specific learning goals, practical assignments, and real-world problem solving.  
