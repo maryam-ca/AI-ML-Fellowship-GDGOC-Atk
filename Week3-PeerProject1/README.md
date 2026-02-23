@@ -103,19 +103,6 @@ In future versions, the system can be improved by:
 - Creating a mobile or web reminder app
 - Sending notifications to users
 
----
-
-## Repository Structure
-Plant-Watering-Reminder/
-│
-├── README.md
-├── data/
-│ └── plants_dataset.csv
-├── notebooks/
-│ └── analysis.ipynb
-└── outputs/
-└── results.png
-
 
 ---
 
