@@ -1,6 +1,6 @@
-# 📊 Data Preprocessing Mastery
+# Data Preprocessing Mastery
 
-## 👩‍💻 Author
+## Author
 Maryam Fatima  
 
 ---
