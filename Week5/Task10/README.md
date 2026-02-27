@@ -1,6 +1,6 @@
-# 📊 Data Preprocessing Mastery
+# Data Preprocessing Mastery
 
-## 👩‍💻 Author
+## Author
 Maryam Fatima  
 
 ---
@@ -225,4 +225,4 @@ The final notebook is fully structured, concise, and ML-ready.
 
 ---
 
-⭐ This project represents complete Data Preprocessing Mastery.
+⭐ This project represents complete Data Preprocessing Mastery
