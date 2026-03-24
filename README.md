@@ -29,75 +29,74 @@ The main objectives of this fellowship are:
 
 ---
 
-## **Repository Structure**
+# Repository Structure
 
 The repository is organized in a clean and structured manner as follows:
-AI-ML-FELLOWSHIP-GDOC-ATK/
-│
-├── Week1-PythonFoundation/
-│ ├── Task1-Basics/
-│ ├── Task2-Conditionals/
-│ ├── Task3-Loops/
-│ ├── Task4-Functions/
-│ ├── Task5-ProblemSolving/
-│ └── README.md
-│
-├── Week2-Data Handling & Visualization/
-│ ├── Task1-NumPy/
-│ ├── Task2-Pandas/
-│ ├── Task3-DataCleaning/
-│ ├── Task4-Matplotlib/
-│ ├── Task5-Seaborn/
-│ ├── Task6-EDA-Titanic/
-│ └── README.md
-│
-├── Week3-PeerProject1/
-│ ├── Data/
-│ ├── Notebooks/
-│ ├── Presentation/
-│ └── README.md
-│
-├── Week4-Machine-Learning-Fundamentals/
-│ ├── Task1-TrainTestSplit/
-│ ├── Task2-LinearRegression/
-│ ├── Task3-LogisticRegression/
-│ ├── Task4-DecisionTrees/
-│ ├── Task5-RandomForest/
-│ ├── Task6-ModelEvaluation/
-│ └── README.md
-│
-├── Week5-Supervised-ML-Foundation/
-│ ├── Task7-Classification/
-│ ├── Task8-Regression/
-│ ├── Task9-HyperparameterTuning/
-│ ├── Task10-FeatureEngineering/
-│ └── README.md
-│
-├── Week6-Neural-Network/
-│ ├── Task11-Perceptron/
-│ ├── Task12-MultiLayerPerceptron/
-│ └── README.md
-│
-├── Week7-Unsupervised-Learning/
-│ ├── Task1-Clustering/
-│ ├── Task2-PCA/
-│ ├── Task3-DimensionalityReduction/
-│ └── README.md
-│
-├── Week8-Deep-Learning/
-│ ├── Task13-MNIST-Classification/
-│ ├── Task14-CNN-Architecture/
-│ ├── Task15-TransferLearning/
-│ └── README.md
-│
-├── Projects/
-│ ├── ML_Model_Comparison_Housing/
-│ ├── Deep_Learning_and_MNIST_Assignment/
-│ └── README.md
-│
-└── README.md
 
-text
+📁 AI-ML-FELLOWSHIP-GDOC-ATK/  
+│  
+├── 📁 Week1-PythonFoundation/  
+│   ├── 📁 Task1-Basics/  
+│   ├── 📁 Task2-Conditionals/  
+│   ├── 📁 Task3-Loops/  
+│   ├── 📁 Task4-Functions/  
+│   ├── 📁 Task5-ProblemSolving/  
+│   └── 📄 README.md  
+│  
+├── 📁 Week2-Data Handling & Visualization/  
+│   ├── 📁 Task1-NumPy/  
+│   ├── 📁 Task2-Pandas/  
+│   ├── 📁 Task3-DataCleaning/  
+│   ├── 📁 Task4-Matplotlib/  
+│   ├── 📁 Task5-Seaborn/  
+│   ├── 📁 Task6-EDA-Titanic/  
+│   └── 📄 README.md  
+│  
+├── 📁 Week3-PeerProject1/  
+│   ├── 📁 Data/  
+│   ├── 📁 Notebooks/  
+│   ├── 📁 Presentation/  
+│   └── 📄 README.md  
+│  
+├── 📁 Week4-Machine-Learning-Fundamentals/  
+│   ├── 📁 Task1-TrainTestSplit/  
+│   ├── 📁 Task2-LinearRegression/  
+│   ├── 📁 Task3-LogisticRegression/  
+│   ├── 📁 Task4-DecisionTrees/  
+│   ├── 📁 Task5-RandomForest/  
+│   ├── 📁 Task6-ModelEvaluation/  
+│   └── 📄 README.md  
+│  
+├── 📁 Week5-Supervised-ML-Foundation/  
+│   ├── 📁 Task7-Classification/  
+│   ├── 📁 Task8-Regression/  
+│   ├── 📁 Task9-HyperparameterTuning/  
+│   ├── 📁 Task10-FeatureEngineering/  
+│   └── 📄 README.md  
+│  
+├── 📁 Week6-Neural-Network/  
+│   ├── 📁 Task11-Perceptron/  
+│   ├── 📁 Task12-MultiLayerPerceptron/  
+│   └── 📄 README.md  
+│  
+├── 📁 Week7-Unsupervised-Learning/  
+│   ├── 📁 Task1-Clustering/  
+│   ├── 📁 Task2-PCA/  
+│   ├── 📁 Task3-DimensionalityReduction/  
+│   └── 📄 README.md  
+│  
+├── 📁 Week8-Deep-Learning/  
+│   ├── 📁 Task13-MNIST-Classification/  
+│   ├── 📁 Task14-CNN-Architecture/  
+│   ├── 📁 Task15-TransferLearning/  
+│   └── 📄 README.md  
+│  
+├── 📁 Projects/  
+│   ├── 📁 ML_Model_Comparison_Housing/  
+│   ├── 📁 Deep_Learning_and_MNIST_Assignment/  
+│   └── 📄 README.md  
+│  
+└── 📄 README.md  
 
 ---
 
